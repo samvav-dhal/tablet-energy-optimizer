@@ -1,0 +1,45 @@
+{
+  "drift_threshold_pct": 1.29,
+  "anomaly_z_threshold": 1.51,
+  "anomaly_iqr_multiplier": 1.5,
+  "adjustment_limit_pct": 18.7,
+  "min_readings_for_stats": 5,
+  "energy_buffer_pct": 5.0,
+  "required_confirmations": 2,
+  "auto_apply_mode": true,
+  "signature_profiles": {
+    "Energy Champion": {
+      "drift_threshold_pct": 3.0,
+      "adjustment_limit_pct": 15.0,
+      "energy_buffer_pct": 3.0
+    },
+    "Quality Excellence": {
+      "drift_threshold_pct": 7.0,
+      "adjustment_limit_pct": 5.0,
+      "energy_buffer_pct": 10.0
+    },
+    "Sustainability Focus": {
+      "drift_threshold_pct": 4.0,
+      "adjustment_limit_pct": 12.0,
+      "energy_buffer_pct": 4.0
+    }
+  },
+  "alert_thresholds": {
+    "power_spike_kw": 50.0,
+    "temperature_high_c": 80.0,
+    "temperature_low_c": 20.0,
+    "vibration_high_mm_s": 5.0
+  },
+  "phase_time_estimates_minutes": {
+    "Preparation": 10,
+    "Granulation": 30,
+    "Drying": 35,
+    "Compression": 20,
+    "Blending": 10,
+    "Coating": 10,
+    "Quality_Testing": 5,
+    "Milling": 10
+  },
+  "version": "1.0",
+  "last_updated": "2026-03-10T00:00:00"
+}

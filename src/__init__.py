@@ -1,0 +1,110 @@
+"""
+Tablet Energy Optimizer - Source Package
+"""
+
+from .predictor import predict, TabletPredictor, get_predictor
+from .realtime_stream import (
+    SensorDataStream, 
+    RollingStatistics, 
+    run_simulation,
+    AdaptiveSensorStream,
+    run_adaptive_simulation,
+)
+from .golden_signature import (
+    GoldenSignatureFramework,
+    GoldenSignature,
+    TargetConfig,
+    TargetDefinition,
+    ProcessConstraint,
+    MultiObjectiveOptimizer,
+    AVAILABLE_TARGETS,
+    create_golden_signature,
+    get_optimal_params_for_targets,
+    get_framework,
+)
+from .continuous_learning import (
+    ContinuousLearningEngine,
+    PerformanceMonitor,
+    BenchmarkValidator,
+    LearningHistory,
+    LearningEvent,
+    LearningEventType,
+    run_learning_simulation,
+    get_learning_engine,
+)
+from .adaptive_optimizer import (
+    AdaptiveOptimizationOrchestrator,
+    RealTimePerformanceTracker,
+    StreamingAnomalyDetector,
+    AdaptiveConstraintManager,
+    AdaptiveFeedbackController,
+    ParameterAdjustmentEngine,
+    DynamicGoalOptimizer,
+    EnergyEmissionBalancer,
+    AdaptiveConfigManager,
+    AdaptationHistory,
+    AdaptiveEvent,
+    AdaptiveEventType,
+    AdaptiveSession,
+    AlertSeverity,
+    ParameterAdjustment,
+    TrajectoryPoint,
+    DriftMetrics,
+    AnomalyAlert,
+    get_orchestrator,
+    create_orchestrator,
+)
+
+__all__ = [
+    # Predictor
+    "predict",
+    "TabletPredictor", 
+    "get_predictor",
+    # Real-time streaming
+    "SensorDataStream",
+    "RollingStatistics",
+    "run_simulation",
+    "AdaptiveSensorStream",
+    "run_adaptive_simulation",
+    # Golden Signature Framework
+    "GoldenSignatureFramework",
+    "GoldenSignature",
+    "TargetConfig",
+    "TargetDefinition",
+    "ProcessConstraint",
+    "MultiObjectiveOptimizer",
+    "AVAILABLE_TARGETS",
+    "create_golden_signature",
+    "get_optimal_params_for_targets",
+    "get_framework",
+    # Continuous Learning
+    "ContinuousLearningEngine",
+    "PerformanceMonitor",
+    "BenchmarkValidator",
+    "LearningHistory",
+    "LearningEvent",
+    "LearningEventType",
+    "run_learning_simulation",
+    "get_learning_engine",
+    # Adaptive Optimization
+    "AdaptiveOptimizationOrchestrator",
+    "RealTimePerformanceTracker",
+    "StreamingAnomalyDetector",
+    "AdaptiveConstraintManager",
+    "AdaptiveFeedbackController",
+    "ParameterAdjustmentEngine",
+    "DynamicGoalOptimizer",
+    "EnergyEmissionBalancer",
+    "AdaptiveConfigManager",
+    "AdaptationHistory",
+    "AdaptiveEvent",
+    "AdaptiveEventType",
+    "AdaptiveSession",
+    "AlertSeverity",
+    "ParameterAdjustment",
+    "TrajectoryPoint",
+    "DriftMetrics",
+    "AnomalyAlert",
+    "get_orchestrator",
+    "create_orchestrator",
+]

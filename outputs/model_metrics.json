@@ -1,0 +1,18 @@
+{
+  "Energy_kWh": {
+    "r2": 0.9674,
+    "rmse": 0.4437,
+    "cv_r2_mean": 0.9582,
+    "cv_r2_std": 0.0118,
+    "cv_rmse_mean": 0.6559,
+    "cv_rmse_std": 0.1075
+  },
+  "Dissolution_Rate": {
+    "r2": 0.9696,
+    "rmse": 0.7408,
+    "cv_r2_mean": 0.9548,
+    "cv_r2_std": 0.0327,
+    "cv_rmse_mean": 0.8473,
+    "cv_rmse_std": 0.2443
+  }
+}

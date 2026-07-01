@@ -1,0 +1,422 @@
+{
+  "golden_signatures": {
+    "Energy Optimizer": {
+      "name": "Energy Optimizer",
+      "description": "Minimize energy consumption while meeting quality thresholds",
+      "primary_targets": [
+        {
+          "target_name": "energy",
+          "priority": "primary",
+          "weight": 1.0,
+          "constraint_min": null,
+          "constraint_max": null
+        }
+      ],
+      "secondary_targets": [
+        {
+          "target_name": "quality",
+          "priority": "secondary",
+          "weight": 0.5,
+          "constraint_min": 85.0,
+          "constraint_max": null
+        }
+      ]
+    },
+    "TriBalance Optimization": {
+      "name": "TriBalance Optimization",
+      "description": "Optimal balance of quality, energy, and yield",
+      "primary_targets": [
+        {
+          "target_name": "quality",
+          "priority": "primary",
+          "weight": 0.4,
+          "constraint_min": null,
+          "constraint_max": null
+        },
+        {
+          "target_name": "energy",
+          "priority": "primary",
+          "weight": 0.4,
+          "constraint_min": null,
+          "constraint_max": null
+        },
+        {
+          "target_name": "yield",
+          "priority": "primary",
+          "weight": 0.2,
+          "constraint_min": null,
+          "constraint_max": null
+        }
+      ],
+      "secondary_targets": []
+    },
+    "Green Impact Mode": {
+      "name": "Green Impact Mode",
+      "description": "Lowest environmental impact with acceptable quality",
+      "primary_targets": [
+        {
+          "target_name": "energy",
+          "priority": "primary",
+          "weight": 0.5,
+          "constraint_min": null,
+          "constraint_max": null
+        },
+        {
+          "target_name": "quality",
+          "priority": "primary",
+          "weight": 0.25,
+          "constraint_min": null,
+          "constraint_max": null
+        },
+        {
+          "target_name": "yield",
+          "priority": "primary",
+          "weight": 0.25,
+          "constraint_min": null,
+          "constraint_max": null
+        }
+      ],
+      "secondary_targets": []
+    },
+    "YieldMax Optimization": {
+      "name": "YieldMax Optimization",
+      "description": "Maximize yield and production efficiency",
+      "primary_targets": [
+        {
+          "target_name": "yield",
+          "priority": "primary",
+          "weight": 0.6,
+          "constraint_min": null,
+          "constraint_max": null
+        },
+        {
+          "target_name": "energy",
+          "priority": "primary",
+          "weight": 0.2,
+          "constraint_min": null,
+          "constraint_max": null
+        },
+        {
+          "target_name": "quality",
+          "priority": "primary",
+          "weight": 0.2,
+          "constraint_min": null,
+          "constraint_max": null
+        }
+      ],
+      "secondary_targets": []
+    },
+    "Quality Leader": {
+      "name": "Quality Leader",
+      "description": "Prioritize dissolution rate and product quality",
+      "primary_targets": [
+        {
+          "target_name": "quality",
+          "priority": "primary",
+          "weight": 0.7,
+          "constraint_min": null,
+          "constraint_max": null
+        }
+      ],
+      "secondary_targets": [
+        {
+          "target_name": "energy",
+          "priority": "secondary",
+          "weight": 0.15,
+          "constraint_min": null,
+          "constraint_max": null
+        },
+        {
+          "target_name": "yield",
+          "priority": "secondary",
+          "weight": 0.15,
+          "constraint_min": null,
+          "constraint_max": null
+        }
+      ]
+    }
+          "constraint_max": null
+        },
+        {
+          "target_name": "yield",
+          "priority": "secondary",
+          "weight": 0.3,
+          "constraint_min": null,
+          "constraint_max": null
+        }
+      ],
+      "optimal_params": {
+        "Granulation_Time": 29.298968220046465,
+        "Binder_Amount": 13.245708196142973,
+        "Drying_Temp": 49.631410128128266,
+        "Drying_Time": 42.06798111564416,
+        "Compression_Force": 15.413593914080767,
+        "Machine_Speed": 287.48776560121496,
+        "Lubricant_Conc": 1.8107342065191776,
+        "Moisture_Content": 2.5337933707716767
+      },
+      "predicted_outcomes": {
+        "energy": 17.552379608154297,
+        "quality": 98.37664794921875,
+        "carbon": 12.286665725708007,
+        "yield": 88.68449895115585,
+        "throughput": 1387.4388280060748,
+        "stability": 81.12055687168733,
+        "Energy_kWh": 17.552379608154297,
+        "Dissolution_Rate": 98.37664794921875,
+        "Carbon_kg": 12.286665725708007
+      },
+      "pareto_rank": 1,
+      "composite_score": 92.97184345543175,
+      "created_at": "2026-03-10T12:14:39.419694",
+      "updated_at": "2026-03-10T12:14:39.419707",
+      "update_count": 0
+    },
+    "Balanced Excellence": {
+      "name": "Balanced Excellence",
+      "description": "Balanced optimization across all key metrics",
+      "primary_targets": [
+        {
+          "target_name": "quality",
+          "priority": "primary",
+          "weight": 1.0,
+          "constraint_min": null,
+          "constraint_max": null
+        },
+        {
+          "target_name": "energy",
+          "priority": "primary",
+          "weight": 1.0,
+          "constraint_min": null,
+          "constraint_max": null
+        },
+        {
+          "target_name": "yield",
+          "priority": "primary",
+          "weight": 1.0,
+          "constraint_min": null,
+          "constraint_max": null
+        }
+      ],
+      "secondary_targets": [
+        {
+          "target_name": "carbon",
+          "priority": "secondary",
+          "weight": 0.5,
+          "constraint_min": null,
+          "constraint_max": null
+        }
+      ],
+      "optimal_params": {
+        "Granulation_Time": 28.15700798890078,
+        "Binder_Amount": 13.82828433354864,
+        "Drying_Temp": 45.017106426437365,
+        "Drying_Time": 39.231926342802666,
+        "Compression_Force": 13.828640101982048,
+        "Machine_Speed": 255.66243002024248,
+        "Lubricant_Conc": 1.3030527183168596,
+        "Moisture_Content": 2.412946209019503
+      },
+      "predicted_outcomes": {
+        "energy": 17.638996124267578,
+        "quality": 98.38184356689453,
+        "carbon": 12.347297286987304,
+        "yield": 88.54904215525019,
+        "throughput": 1228.3121501012124,
+        "stability": 81.71654473356958,
+        "Energy_kWh": 17.638996124267578,
+        "Dissolution_Rate": 98.38184356689453,
+        "Carbon_kg": 12.347297286987304
+      },
+      "pareto_rank": 1,
+      "composite_score": 80.72349415344729,
+      "created_at": "2026-03-10T12:14:56.289403",
+      "updated_at": "2026-03-10T12:14:56.289411",
+      "update_count": 0
+    },
+    "Sustainability Focus": {
+      "name": "Sustainability Focus",
+      "description": "Minimize environmental impact while maintaining quality",
+      "primary_targets": [
+        {
+          "target_name": "carbon",
+          "priority": "primary",
+          "weight": 1.0,
+          "constraint_min": null,
+          "constraint_max": null
+        },
+        {
+          "target_name": "energy",
+          "priority": "primary",
+          "weight": 0.8,
+          "constraint_min": null,
+          "constraint_max": null
+        }
+      ],
+      "secondary_targets": [
+        {
+          "target_name": "quality",
+          "priority": "secondary",
+          "weight": 0.5,
+          "constraint_min": 85.0,
+          "constraint_max": null
+        }
+      ],
+      "optimal_params": {
+        "Granulation_Time": 29.313684496810584,
+        "Binder_Amount": 13.43663617609634,
+        "Drying_Temp": 44.19699625770709,
+        "Drying_Time": 45.93154428798792,
+        "Compression_Force": 5.128652809902821,
+        "Machine_Speed": 209.9662554716408,
+        "Lubricant_Conc": 1.07688525693541,
+        "Moisture_Content": 3.6799859175049856
+      },
+      "predicted_outcomes": {
+        "energy": 17.494953155517578,
+        "quality": 98.58868408203125,
+        "carbon": 12.246467208862304,
+        "yield": 81.73391593061852,
+        "throughput": 999.831277358204,
+        "stability": 78.79604400379023,
+        "Energy_kWh": 17.494953155517578,
+        "Dissolution_Rate": 98.58868408203125,
+        "Carbon_kg": 12.246467208862304
+      },
+      "pareto_rank": 1,
+      "composite_score": 99.4262943422504,
+      "created_at": "2026-03-10T12:14:43.822929",
+      "updated_at": "2026-03-10T12:14:43.822940",
+      "update_count": 0
+    },
+    "High Throughput Production": {
+      "name": "High Throughput Production",
+      "description": "Maximize production capacity with acceptable quality",
+      "primary_targets": [
+        {
+          "target_name": "throughput",
+          "priority": "primary",
+          "weight": 1.0,
+          "constraint_min": null,
+          "constraint_max": null
+        },
+        {
+          "target_name": "yield",
+          "priority": "primary",
+          "weight": 0.8,
+          "constraint_min": null,
+          "constraint_max": null
+        }
+      ],
+      "secondary_targets": [
+        {
+          "target_name": "quality",
+          "priority": "secondary",
+          "weight": 0.5,
+          "constraint_min": 85.0,
+          "constraint_max": null
+        },
+        {
+          "target_name": "energy",
+          "priority": "secondary",
+          "weight": 0.3,
+          "constraint_min": null,
+          "constraint_max": null
+        }
+      ],
+      "optimal_params": {
+        "Granulation_Time": 25.189257280206196,
+        "Binder_Amount": 11.367439795273416,
+        "Drying_Temp": 40.93783412259471,
+        "Drying_Time": 42.34489529025595,
+        "Compression_Force": 15.629387226035337,
+        "Machine_Speed": 256.62390422963324,
+        "Lubricant_Conc": 0.8618246014101858,
+        "Moisture_Content": 2.2230392245664246
+      },
+      "predicted_outcomes": {
+        "energy": 17.662025451660156,
+        "quality": 98.15076446533203,
+        "carbon": 12.363417816162109,
+        "yield": 89.01497299122586,
+        "throughput": 1233.1195211481663,
+        "stability": 81.60047856099914,
+        "Energy_kWh": 17.662025451660156,
+        "Dissolution_Rate": 98.15076446533203,
+        "Carbon_kg": 12.363417816162109
+      },
+      "pareto_rank": 1,
+      "composite_score": 79.32675561473712,
+      "created_at": "2026-03-10T12:15:03.161295",
+      "updated_at": "2026-03-10T12:15:03.161303",
+      "update_count": 0
+    },
+    "Quality Excellence": {
+      "name": "Quality Excellence",
+      "description": "Maximize dissolution rate and product quality",
+      "primary_targets": [
+        {
+          "target_name": "quality",
+          "priority": "primary",
+          "weight": 1.0,
+          "constraint_min": null,
+          "constraint_max": null
+        }
+      ],
+      "secondary_targets": [
+        {
+          "target_name": "stability",
+          "priority": "secondary",
+          "weight": 0.5,
+          "constraint_min": null,
+          "constraint_max": null
+        },
+        {
+          "target_name": "energy",
+          "priority": "secondary",
+          "weight": 0.3,
+          "constraint_min": null,
+          "constraint_max": null
+        }
+      ],
+      "optimal_params": {
+        "Granulation_Time": 25.567423630914362,
+        "Binder_Amount": 12.99815879651283,
+        "Drying_Temp": 49.2571251198123,
+        "Drying_Time": 44.78539945988428,
+        "Compression_Force": 5.9149084547862785,
+        "Machine_Speed": 223.25593283409026,
+        "Lubricant_Conc": 1.3649985801950426,
+        "Moisture_Content": 2.0597739896557186
+      },
+      "predicted_outcomes": {
+        "energy": 17.487831115722656,
+        "quality": 98.58824157714844,
+        "carbon": 12.24148178100586,
+        "yield": 84.60641606575406,
+        "throughput": 1066.2796641704513,
+        "stability": 82.4133671761202,
+        "Energy_kWh": 17.487831115722656,
+        "Dissolution_Rate": 98.58824157714844,
+        "Carbon_kg": 12.24148178100586
+      },
+      "pareto_rank": 1,
+      "composite_score": 93.49820027441899,
+      "created_at": "2026-03-10T12:14:49.361489",
+      "updated_at": "2026-03-10T12:14:49.361499",
+      "update_count": 0
+    }
+  },
+  "metadata": {
+    "version": "2.0",
+    "last_updated": "2026-03-10T12:15:03.162124",
+    "available_targets": [
+      "energy",
+      "quality",
+      "carbon",
+      "yield",
+      "throughput",
+      "stability"
+    ]
+  }
+}
